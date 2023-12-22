@@ -8,13 +8,15 @@
 
 #import "HttpHelper.h"
 
-#if defined(__ppc__) || defined(__ppc64__)
-#define PROCESSOR "PPC"
-#elif defined(__i386__) || defined(__x86_64__)
+//#if defined(__ppc__) || defined(__ppc64__)
+//#define PROCESSOR "PPC"
+//#elif defined(__i386__) || defined(__x86_64__)
+//#define PROCESSOR "Intel"
+//#else
+//#error Unknown architecture
+//#endif
+
 #define PROCESSOR "Intel"
-#else
-#error Unknown architecture
-#endif
 
 @implementation HttpHelper
 
@@ -61,7 +63,7 @@ static inline int callGestalt(OSType selector)
     NSString *osVersion = [self macOSXVersionString];
     NSString *webKitVersion = [self userVisibleWebKitVersionString];
     
-    return [NSString stringWithFormat:@"Mozilla/5.0 (Macintosh; %@ Mac OS X %@) AppleWebKit/%@ (KHTML, like Gecko) ", @PROCESSOR, osVersion, webKitVersion];
+    return [NSString stringWithFormat:@"Mozilla/5.0 (Macintosh; %s Mac OS X %@) AppleWebKit/%@ (KHTML, like Gecko) ", PROCESSOR, osVersion, webKitVersion];
 }
 
 

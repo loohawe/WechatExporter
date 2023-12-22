@@ -9,7 +9,7 @@
 
 extern "C"
 {
-#include <lame/lame.h>
+#include <lame_headers/lame.h>
 }
 #include "Utils.h"
 #include "FileSystem.h"

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -38,7 +38,39 @@
 		34E3E9242535555F0093042D /* RawMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34E3E9232535555F0093042D /* RawMessage.cpp */; };
 		34ED31E825528A1800C42698 /* Utils_audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34ED31E725528A1800C42698 /* Utils_audio.cpp */; };
 		34ED32082552A98600C42698 /* Utils_silk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34ED32072552A98600C42698 /* Utils_silk.cpp */; };
+		FB4C9CD02B33182200B24F80 /* libjsoncpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4C9CCF2B33182200B24F80 /* libjsoncpp.a */; };
+		FB4C9CD22B33299C00B24F80 /* libSKP_SILK_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4C9CD12B33299C00B24F80 /* libSKP_SILK_SDK.a */; };
+		FB4C9CD42B33318900B24F80 /* libplist-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4C9CD32B33318900B24F80 /* libplist-2.0.a */; };
+		FB4C9CDA2B346C1800B24F80 /* libprotobuf_lite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4C9CD92B346C1800B24F80 /* libprotobuf_lite.a */; };
+		FB4C9CDB2B346C1A00B24F80 /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4C9CD52B34407E00B24F80 /* libprotobuf.a */; };
+		FB4C9CDE2B346C2000B24F80 /* libprotoc_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4C9CDD2B346C2000B24F80 /* libprotoc_lib.a */; };
+		FB4C9CF02B34871B00B24F80 /* libplist-2.0.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4C9CEF2B34871B00B24F80 /* libplist-2.0.4.dylib */; };
+		FB4C9CF12B34871B00B24F80 /* libplist-2.0.4.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = FB4C9CEF2B34871B00B24F80 /* libplist-2.0.4.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		FB4C9CF32B34872200B24F80 /* libplist++-2.0.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4C9CF22B34872200B24F80 /* libplist++-2.0.4.dylib */; };
+		FB4C9CF42B34872200B24F80 /* libplist++-2.0.4.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = FB4C9CF22B34872200B24F80 /* libplist++-2.0.4.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		FB4C9CF62B34872500B24F80 /* libplist++-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4C9CF52B34872500B24F80 /* libplist++-2.0.a */; };
+		FB4C9CF92B34882A00B24F80 /* LAME.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4C9CF82B34882A00B24F80 /* LAME.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FB4C9CFA2B34882A00B24F80 /* LAME.framework in Embed Libraries */ = {isa = PBXBuildFile; fileRef = FB4C9CF82B34882A00B24F80 /* LAME.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FB4C9CFB2B34898A00B24F80 /* libmp3lame.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4C9CE32B347BDC00B24F80 /* libmp3lame.0.dylib */; };
+		FB4C9CFC2B34898A00B24F80 /* libmp3lame.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = FB4C9CE32B347BDC00B24F80 /* libmp3lame.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB4C9CEE2B347DBD00B24F80 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FB4C9CFC2B34898A00B24F80 /* libmp3lame.0.dylib in Embed Libraries */,
+				FB4C9CF12B34871B00B24F80 /* libplist-2.0.4.dylib in Embed Libraries */,
+				FB4C9CFA2B34882A00B24F80 /* LAME.framework in Embed Libraries */,
+				FB4C9CF42B34872200B24F80 /* libplist++-2.0.4.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		34140A12254988C4003CE75A /* ExportNotifierImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExportNotifierImpl.h; sourceTree = "<group>"; };
@@ -115,6 +147,19 @@
 		34ED31FB255294E500C42698 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		34ED31FE2552950100C42698 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		34ED32072552A98600C42698 /* Utils_silk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils_silk.cpp; sourceTree = "<group>"; };
+		FB4C9CCF2B33182200B24F80 /* libjsoncpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjsoncpp.a; path = WechatExporter/lib/libjsoncpp/libjsoncpp.a; sourceTree = "<group>"; };
+		FB4C9CD12B33299C00B24F80 /* libSKP_SILK_SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSKP_SILK_SDK.a; path = WechatExporter/lib/silk/libSKP_SILK_SDK.a; sourceTree = "<group>"; };
+		FB4C9CD32B33318900B24F80 /* libplist-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libplist-2.0.a"; path = "WechatExporter/lib/libplist/libplist-2.0.a"; sourceTree = "<group>"; };
+		FB4C9CD52B34407E00B24F80 /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotobuf.a; path = WechatExporter/lib/libprotobuf/libprotobuf.a; sourceTree = "<group>"; };
+		FB4C9CD92B346C1800B24F80 /* libprotobuf_lite.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotobuf_lite.a; path = WechatExporter/lib/libprotobuf/libprotobuf_lite.a; sourceTree = "<group>"; };
+		FB4C9CDD2B346C2000B24F80 /* libprotoc_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotoc_lib.a; path = WechatExporter/lib/libprotobuf/libprotoc_lib.a; sourceTree = "<group>"; };
+		FB4C9CE32B347BDC00B24F80 /* libmp3lame.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmp3lame.0.dylib; path = WechatExporter/lib/lame/libmp3lame.0.dylib; sourceTree = "<group>"; };
+		FB4C9CE72B347BDF00B24F80 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmp3lame.a; path = WechatExporter/lib/lame/libmp3lame.a; sourceTree = "<group>"; };
+		FB4C9CEF2B34871B00B24F80 /* libplist-2.0.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libplist-2.0.4.dylib"; path = "WechatExporter/lib/libplist/libplist-2.0.4.dylib"; sourceTree = "<group>"; };
+		FB4C9CF22B34872200B24F80 /* libplist++-2.0.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libplist++-2.0.4.dylib"; path = "WechatExporter/lib/libplist/libplist++-2.0.4.dylib"; sourceTree = "<group>"; };
+		FB4C9CF52B34872500B24F80 /* libplist++-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libplist++-2.0.a"; path = "WechatExporter/lib/libplist/libplist++-2.0.a"; sourceTree = "<group>"; };
+		FB4C9CF82B34882A00B24F80 /* LAME.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LAME.framework; path = WechatExporter/lib/lame/LAME.framework; sourceTree = "<group>"; };
+		FB5F06A02B31CA2C00831781 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +167,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4C9CF92B34882A00B24F80 /* LAME.framework in Frameworks */,
+				FB4C9CDA2B346C1800B24F80 /* libprotobuf_lite.a in Frameworks */,
+				FB4C9CDB2B346C1A00B24F80 /* libprotobuf.a in Frameworks */,
+				FB4C9CDE2B346C2000B24F80 /* libprotoc_lib.a in Frameworks */,
+				FB4C9CD02B33182200B24F80 /* libjsoncpp.a in Frameworks */,
+				FB4C9CF32B34872200B24F80 /* libplist++-2.0.4.dylib in Frameworks */,
 				342EDB00252450EB006A295A /* libcurl.tbd in Frameworks */,
 				343F613025234BFC00FFE085 /* libsqlite3.tbd in Frameworks */,
+				FB4C9CF62B34872500B24F80 /* libplist++-2.0.a in Frameworks */,
+				FB4C9CF02B34871B00B24F80 /* libplist-2.0.4.dylib in Frameworks */,
+				FB4C9CD22B33299C00B24F80 /* libSKP_SILK_SDK.a in Frameworks */,
+				FB4C9CD42B33318900B24F80 /* libplist-2.0.a in Frameworks */,
+				FB4C9CFB2B34898A00B24F80 /* libmp3lame.0.dylib in Frameworks */,
 				342EDB0B252495BD006A295A /* libxml2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +207,7 @@
 		343F6114252322D500FFE085 /* WechatExporter */ = {
 			isa = PBXGroup;
 			children = (
+				FB5F06A02B31CA2C00831781 /* lib */,
 				3497891926037783001D1F8F /* AppConfiguration.h */,
 				3497891A26037783001D1F8F /* AppConfiguration.mm */,
 				343F6115252322D500FFE085 /* AppDelegate.h */,
@@ -225,9 +282,21 @@
 		343F612E25234BFC00FFE085 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB4C9CF82B34882A00B24F80 /* LAME.framework */,
+				FB4C9CD92B346C1800B24F80 /* libprotobuf_lite.a */,
+				FB4C9CEF2B34871B00B24F80 /* libplist-2.0.4.dylib */,
+				FB4C9CF52B34872500B24F80 /* libplist++-2.0.a */,
+				FB4C9CF22B34872200B24F80 /* libplist++-2.0.4.dylib */,
+				FB4C9CE32B347BDC00B24F80 /* libmp3lame.0.dylib */,
+				FB4C9CCF2B33182200B24F80 /* libjsoncpp.a */,
+				FB4C9CE72B347BDF00B24F80 /* libmp3lame.a */,
+				FB4C9CDD2B346C2000B24F80 /* libprotoc_lib.a */,
 				34ED31FE2552950100C42698 /* CoreMedia.framework */,
 				34ED31FB255294E500C42698 /* libz.tbd */,
 				34ED31F8255294E100C42698 /* libiconv.tbd */,
+				FB4C9CD52B34407E00B24F80 /* libprotobuf.a */,
+				FB4C9CD12B33299C00B24F80 /* libSKP_SILK_SDK.a */,
+				FB4C9CD32B33318900B24F80 /* libplist-2.0.a */,
 				34ED31F5255294D100C42698 /* libbz2.tbd */,
 				34ED31F3255294BB00C42698 /* Security.framework */,
 				34ED31F1255294A500C42698 /* AudioToolbox.framework */,
@@ -247,9 +316,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 343F6126252322D600FFE085 /* Build configuration list for PBXNativeTarget "WechatExporter" */;
 			buildPhases = (
+				FB5F06A22B31CA7400831781 /* ShellScript */,
 				343F610E252322D500FFE085 /* Sources */,
 				343F610F252322D500FFE085 /* Frameworks */,
 				343F6110252322D500FFE085 /* Resources */,
+				FB4C9CEE2B347DBD00B24F80 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -306,6 +377,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FB5F06A22B31CA7400831781 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nexport\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		343F610E252322D500FFE085 /* Sources */ = {
@@ -402,6 +494,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -464,6 +557,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -486,12 +580,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WechatExporter/WechatExporter.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L848BW5698;
+				DEVELOPMENT_TEAM = 467A2QNXBM;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/WechatExporter/lib/lame";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					USING_ASYNC_TASK_FOR_MP3,
@@ -500,13 +596,27 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					"${SDKROOT}/usr/include/libxml2/",
+					"${PROJECT_DIR}/WechatExporter/lib/libprotobuf",
+					"${PROJECT_DIR}/WechatExporter/lib/libjsoncpp",
+					"${PROJECT_DIR}/WechatExporter/lib/lame",
+					"${PROJECT_DIR}/WechatExporter/lib/silk",
+					"${PROJECT_DIR}/WechatExporter/lib/libplist",
+					"${PROJECT_DIR}/WechatExporter/lib/",
 				);
 				INFOPLIST_FILE = WechatExporter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WechatExporter/lib/lame",
+					"$(PROJECT_DIR)/WechatExporter/lib/libjsoncpp",
+					"$(PROJECT_DIR)/WechatExporter/lib/silk",
+					"$(PROJECT_DIR)/WechatExporter/lib/libplist",
+					"$(PROJECT_DIR)/WechatExporter/lib/libprotobuf",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.9.0;
 				OTHER_LDFLAGS = (
 					"-L/usr/local/lib",
@@ -516,8 +626,9 @@
 					"-lSKP_SILK_SDK",
 					"-lplist-2.0",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.wakin.WechatExporter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loohawe.WechatExporter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -526,12 +637,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WechatExporter/WechatExporter.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L848BW5698;
+				DEVELOPMENT_TEAM = 467A2QNXBM;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/WechatExporter/lib/lame";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"NDEBUG=1",
 					USING_ASYNC_TASK_FOR_MP3_DISABLED,
@@ -539,13 +652,27 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/include/,
 					"${SDKROOT}/usr/include/libxml2/",
+					"${PROJECT_DIR}/WechatExporter/lib/libprotobuf",
+					"${PROJECT_DIR}/WechatExporter/lib/libjsoncpp",
+					"${PROJECT_DIR}/WechatExporter/lib/lame",
+					"${PROJECT_DIR}/WechatExporter/lib/silk",
+					"${PROJECT_DIR}/WechatExporter/lib/libplist",
+					"${PROJECT_DIR}/WechatExporter/lib/",
 				);
 				INFOPLIST_FILE = WechatExporter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WechatExporter/lib/lame",
+					"$(PROJECT_DIR)/WechatExporter/lib/libjsoncpp",
+					"$(PROJECT_DIR)/WechatExporter/lib/silk",
+					"$(PROJECT_DIR)/WechatExporter/lib/libplist",
+					"$(PROJECT_DIR)/WechatExporter/lib/libprotobuf",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.9.0;
 				OTHER_LDFLAGS = (
 					"-L/usr/local/lib",
@@ -555,8 +682,9 @@
 					"-lSKP_SILK_SDK",
 					"-lplist-2.0",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.wakin.WechatExporter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loohawe.WechatExporter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
