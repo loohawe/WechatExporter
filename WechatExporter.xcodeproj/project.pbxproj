@@ -620,7 +620,7 @@
 				MARKETING_VERSION = 1.9.0;
 				OTHER_LDFLAGS = (
 					"-L/usr/local/lib",
-					"-lprotobufd",
+					"-lprotobuf",
 					"-ljsoncpp",
 					"-lmp3lame",
 					"-lSKP_SILK_SDK",

@@ -13,12 +13,12 @@ extern "C"
 }
 #include "Utils.h"
 #include "FileSystem.h"
-#ifdef _WIN32
-#include <atlstr.h>
+//#ifdef _WIN32
+//#include <atlstr.h>
 #ifndef NDEBUG
 #include <cassert>
 #endif
-#endif
+//#endif
 
 bool pcmToMp3(const std::string& pcmPath, const std::string& mp3Path)
 {

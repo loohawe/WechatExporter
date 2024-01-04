@@ -10,12 +10,12 @@
 #include <curl/curl.h>
 #include <iostream>
 #include <fstream>
-#ifdef _WIN32
-#include <atlstr.h>
+//#ifdef _WIN32
+//#include <atlstr.h>
 #ifndef NDEBUG
 #include <cassert>
 #endif
-#endif
+//#endif
 #include "FileSystem.h"
 #include "Utils.h"
 

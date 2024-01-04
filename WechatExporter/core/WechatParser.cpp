@@ -896,6 +896,8 @@ bool WechatInfoParser::parsePreferences(WechatInfo& wechatInfo)
         return false;
     }
     
+    plist_write_to_file(node, "/Users/haolu/Personal/Temp/intermedia/com.tencent.xin.plist", PLIST_FORMAT_XML, PLIST_OPT_INDENT);
+    
     plist_t startupVersions = plist_access_path(node, 1, "prevStartupVersions");
     if (NULL != startupVersions && PLIST_IS_ARRAY(startupVersions))
     {

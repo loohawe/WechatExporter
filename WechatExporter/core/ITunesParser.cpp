@@ -278,6 +278,10 @@ bool ITunesDb::load(const std::string& domain, bool onlyFile)
             }
         }
         
+#if !defined(NDEBUG) || defined(DBG_PERF)
+//        printf("PERF: find relativePath: %s\r\n", file->relativePath.c_str());
+#endif
+        
         m_files.push_back(file);
     }
     
